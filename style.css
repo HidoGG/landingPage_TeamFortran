@@ -1,0 +1,233 @@
+
+:root {
+  --bodyFondo: linear-gradient(to bottom right, rgb(10, 7, 56), #8a4eff);
+  --transparenciaFondo: rgba(0,0,0,0);
+  --azulOscuroBoton:#070047;
+  --titulof: #3cf;
+  --blanco: #ffffff;
+  --negro: #000000;
+}
+
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  background: var(--bodyFondo);
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales del encabezado */
+header {
+  background-color: var(--transparenciaFondo);
+  padding: 20px;
+  color: var(--blanco);
+}
+
+.container {
+    max-width: 900px; /* Ajusta el tamaño según tus necesidades */
+    margin: 0 auto;
+    padding: 0 20px; /* Ajusta el tamaño según tus necesidades */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+
+/* Estilos del logo */
+.logoFortram img {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+}
+
+/* Estilos de la navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.container-link li {
+  margin-right: 10px;
+}
+
+.boton a {
+    display: block;
+    padding: 10px;
+    color: var(--blanco);
+    text-decoration: none;
+    transition: background-color 0.3s ease,   border-radius 0.3s ease;
+    border-radius: 5px;
+}
+
+.boton a:hover {
+  background-color: var(--azulOscuroBoton);
+  border-radius: 20px;
+}
+
+.oculto {
+  display: none;
+}
+
+.vicible {
+  display: block;
+}
+
+.mostrarMas {
+  background-color: var(--azulOscuroBoton);
+  border: none;
+  border-radius: 40px;
+  color: var(--blanco);
+  padding: 15px 32px;
+  font-size: 1.2em;
+  box-shadow: 0px 0px 10px 0px var(--azulOscuroBoton);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.mostrarMas:hover {
+  box-shadow: none;
+  background-color: var(--negro);
+  color: var(--blanco);
+  transition: cubic-bezier(0.075, 0.82, 0.162, 1) 3.05s;
+}
+
+/* Estilos del título principal */
+.titulo-principal {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilos del título Secundario */
+.titulo-secundario {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Estilos del título Terciario*/
+.titulo-terciario {
+  margin-bottom: 5px;
+}
+
+/* Estilos del contenedor principal */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos del equipo Fortram */
+.TeamFortram {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  /*Border*/
+  /* border: 2px solid black;
+  border-radius: 10px; */
+}
+
+/* Estilos de los párrafos dentro de las secciones */
+.TeamFortram p,
+.Integrantes p,
+.Metodologia p {
+  margin-bottom: 10px;
+}
+
+/* Menu de Integrantes */
+.foto-Integrante {
+  padding: 2rem;
+  background-color: var(--transparenciaFondo);
+  position: relative;
+  width: calc(130 + 4 * 70px + 4rem);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px;
+  box-shadow: 0 10px 25px 0 rgba(235, 235, 235, 0.26);
+}
+
+.foto-Integrante img{
+  width: 70%;
+  height: 70%;
+}
+
+
+.linkF {
+  display: inline-flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border-radius: 99em;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform-origin: center left;
+  transition: width 0.2s ease-in;
+  text-decoration: none;
+  color: inherit;
+}
+
+.linkF:before{
+  position: absolute;
+  z-index: -1;
+  content: --;
+  display: block;
+  border-radius: 99em;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  
+}
+
+.linkF:hover, .linkF:focus {
+  outline: 0;
+  width: 180px;
+  
+}
+
+.linkF:hover:before,
+.linkF:hover .link-titulo {
+  transform: translateX(-2%);
+  background-color: var(--azulOscuroBoton);
+}
+
+.link-icon {
+  font-size: 27px !important;
+  display: block;
+  flex-shrink: 0;
+  left: 11px;
+  position: absolute;
+}
+
+.link-titulo {
+  color: var(--blanco);
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-indent: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+
+

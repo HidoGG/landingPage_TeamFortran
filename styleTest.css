@@ -1,0 +1,188 @@
+:root {
+    --bodyFondo: linear-gradient(to right, rgb(10, 7, 56), #8a4eff);
+    --titulof: #3cf;
+}
+
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: linear-gradient(to right, rgb(10, 7, 56), #8a4eff);
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales del encabezado */
+header {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+.container {
+    max-width: 900px; /* Ajusta el tamaño según tus necesidades */
+    margin: 0 auto;
+    padding: 0 20px; /* Ajusta el tamaño según tus necesidades */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+
+/* Estilos del logo */
+.logoFortram img {
+  width: 100px; /* Ajusta el tamaño según tus necesidades */
+}
+
+/* Estilos de la navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.container-link li {
+  margin-right: 10px;
+}
+
+.boton a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease,   border-radius 0.3s ease;
+    border-radius: 5px;
+}
+
+.boton a:hover {
+  background-color: #555;
+  border-radius: 20px;
+}
+
+/* Estilos del título principal */
+.titulo-principal {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilos del título Secundario */
+.titulo-secundario {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Estilos del título Terciario*/
+.titulo-terciario {
+  margin-bottom: 5px;
+}
+
+/* Estilos del contenedor principal */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos del equipo Fortram */
+.TeamFortram {
+  margin-bottom: 20px;
+}
+
+/* Estilos de los párrafos dentro de las secciones */
+.TeamFortram p,
+.Integrantes p,
+.Metodologia p {
+  margin-bottom: 10px;
+}
+
+/* Menu de Integrantes */
+.foto-Integrante {
+  padding: 2rem;
+  background-color: #dac8c880;
+  position: relative;
+  width: calc(130 + 4 * 70px + 4rem);
+  display: flex;
+  justify-content: center;
+  
+  border-radius: 20px 20px;
+  box-shadow: 0 10px 25px 0 rgba(235, 235, 235, 0.26);
+  
+}
+
+.foto-Integrante img{
+  width: 70%;
+  height: 70%;
+}
+
+
+.linkF {
+  display: inline-flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border-radius: 99em;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform-origin: center left;
+  transition: width 0.2s ease-in;
+  text-decoration: none;
+  color: inherit;
+}
+
+.linkF:before{
+  position: absolute;
+  z-index: -1;
+  content: --;
+  display: block;
+  border-radius: 99em;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  background-color: #eeee;
+}
+
+.linkF:hover, .linkF:focus {
+  outline: 0;
+  width: 180px;
+  background-color: #dac8c8ef;
+}
+
+.linkF:hover:before,
+.linkF:hover .link-titulo {
+  transform: translateX(-2%);
+  background-color: #dac8c8ce;
+}
+
+.link-icon {
+  color: var(--titulof);
+  font-size: 27px !important;
+  display: block;
+  flex-shrink: 0;
+  left: 11px;
+  position: absolute;
+}
+
+.link-titulo {
+  color: var(--titulof);
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  display: block;
+  text-align: center;
+  text-indent: 10px;
+  width: 100%;
+  height: 100%;
+}
+
