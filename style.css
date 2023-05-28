@@ -6,6 +6,7 @@
   --titulof: #3cf;
   --blanco: #ffffff;
   --negro: #000000;
+  --header: #2e1569ec;
 }
 
 *:before,
@@ -26,9 +27,17 @@ body {
 
 /* Estilos generales del encabezado */
 header {
-  background-color: var(--transparenciaFondo);
+  background-color: var(--header);
   padding: 20px;
   color: var(--blanco);
+}
+
+.fixed-header {
+  position:fixed;
+	z-index:1000;
+	top:0;
+	width: 100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }
 
 .container {
@@ -124,7 +133,7 @@ nav ul {
 /* Estilos del contenedor principal */
 main {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 20px;
 }
 
