@@ -137,22 +137,61 @@ main {
   padding: 20px;
 }
 
+
+ /* Seccion: TeamFortran*/ 
+
+
 /* Estilos del equipo Fortram */
-.TeamFortram {
+
+.TeamFortran {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
-  /*Border*/
-  /* border: 2px solid black;
-  border-radius: 10px; */
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .wrapper {
+      flex-direction: column;
+  }
 }
 
-/* Estilos de los párrafos dentro de las secciones */
-.TeamFortram p,
-.Integrantes p,
-.Metodologia p {
-  margin-bottom: 10px;
+.wrapper {
+  text-align: center;
+  flex-grow: 1; /* Agregar esta propiedad */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+.wrapper .h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: #FC6D6D;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.wrapper .static-text {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+
+.dinamic-text li{
+  color: #FC6D6D;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500px;
+  top: 0;
+  opacity: 0;
+}
+
+.image-container {
+  flex: 1;
+}
+
 
 /* Estilo del menu de Integrantes */
 .foto-Integrante {
