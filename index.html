@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
+    <!-- Iconos -->
     <script src="https://kit.fontawesome.com/4d5a5571c9.js" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
     <script defer src="main.js"></script>
     <title>TeamFortram</title>
 </head>
@@ -43,43 +48,130 @@
             <section class="Integrantes">
                 
                 <h3 class="titulo-secundario">Integrantes</h3>
-                <div class="foto-Integrante">
-                    <a class="linkF">
-                        <img class="link-icon" src="img/fern.jpeg" alt="Foto de ">
-                        <span class="link-titulo">Fernando Daniel</span>
-                    </a>
-                    <a class="linkF">
-                        <img class="link-icon" src="img/pao.jpeg" alt="Foto de ">
-                        <span class="link-titulo">Ruiz Paola Del Valle</span>
-                    </a>
-                    <a class="linkF">
-                        <img class="link-icon" src="img/gabi.png" alt="Foto de ">
-                        <span class="link-titulo">Hidalgo Gabriel</span>
-                    </a>
-                    <a class="linkF">
-                        <img class="link-icon" src="img/gasto.png" alt="Foto de ">
-                        <span class="link-titulo">Morales Gastón</span>
-                    </a>
-                    <a class="linkF">
-                        <img class="link-icon" src="img/dani.jpeg" alt="Foto de ">
-                        <span class="link-titulo">Morales Castro Danisa</span>
-                    </a>
-                    <a class="linkF">
-                        <img class="link-icon" src="img/mati.png" alt="Foto de ">
-                        <span class="link-titulo">Peña Matías Nicolas</span>
-                    </a>
-                    <a class="linkF">
-                        <img class="link-icon" src="img/facu.jpeg" alt="Foto de ">
-                        <span class="link-titulo">Pereyra Facundo Ezequiel</span>
-                    </a>
-                    <a class="linkF">
-                        <img class="link-icon" src="img/lucas.png" alt="Foto de ">
-                        <span class="link-titulo">Vizcaino Lucas Ezequiel</span>
-                    </a>
-                    <a class="linkF">
-                        <img class="link-icon" src="img/gise.jpeg" alt="Foto de ">
-                        <span class="link-titulo">Vizcaino Gisela Carina</span>
-                    </a>
+                <div class="team">
+
+                    <div class="carousel__contenedor">
+                        <button aria-label="Anterior" class="carousel__anterior">
+                            <i class="fas fa-chevron-left" ></i>
+                        </button>
+
+                        <div class="carousel__lista" >
+                            <div class="card">
+                                <div class="cardContent">
+                                    <span></span>
+                                    <div class="img">
+                                        <img src="img/Team/dani.jpeg" alt="Danisa Morales">
+                                    </div>
+                                    <h4>Danisa Morales</h4>
+                                </div>
+                                <div class="linkIcon">
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="cardContent">
+                                    <span></span>
+                                    <div class="img">
+                                        <img src="img/Team/facu.jpeg" alt="Facundo Pereyra">
+                                    </div>
+                                    <h4>Facundo Pereyra</h4>
+                                </div>
+                                <div class="linkIcon">
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="cardContent">
+                                    <span></span>
+                                    <div class="img">
+                                        <img src="img/Team/gabi.jpeg" alt="Gabriel Hidalgo">
+                                    </div>
+                                    <h4>Gabriel Hidalgo</h4>
+                                </div>
+                                <div class="linkIcon">
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="cardContent">
+                                    <span></span>
+                                    <div class="img">
+                                        <img src="img/Team/gasto.png" alt="Gaston Morales">
+                                    </div>
+                                    <h4>Gaston Morales</h4>
+                                </div>
+                                <div class="linkIcon">
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="cardContent">
+                                    <span></span>
+                                    <div class="img">
+                                        <img src="img/Team/gise.jpeg" alt="Gisela Vizcaíno">
+                                    </div>
+                                    <h4>Gisela Vizcaíno</h4>
+                                </div>
+                                <div class="linkIcon">
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="cardContent">
+                                    <span></span>
+                                    <div class="img">
+                                        <img src="img/Team/lucas.png" alt="Lucas Vizcaíno">
+                                    </div>
+                                    <h4>Lucas Vizcaíno</h4>
+                                </div>
+                                <div class="linkIcon">
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="cardContent">
+                                    <span></span>
+                                    <div class="img">
+                                        <img src="img/Team/pao.jpeg" alt="Paola Del Valle Ruiz">
+                                    </div>
+                                    <h4>Paola Del Valle Ruiz</h4>
+                                </div>
+                                <div class="linkIcon">
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="cardContent">
+                                    <span></span>
+                                    <div class="img">
+                                        <img src="img/Team/mati.png" alt="Matias Nicolas">
+                                    </div>
+                                    <h4>Matias Nicolas</h4>
+                                </div>
+                                <div class="linkIcon">
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="cardContent">
+                                    <span></span>
+                                    <div class="img">
+                                        <img src="img/Team/fern.jpeg" alt="Matias Nicolas">
+                                    </div>
+                                    <h4>Fernando Calisaya</h4>
+                                </div>
+                                <div class="linkIcon">
+                                    <a href="#" class="fa fa-github"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button aria-label="Siguiente" class="carousel__siguiente">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div role="tablist" class="carousel__indicadores"></div>
                 </div>
                 <p>
                     Somos un equipo de estudiantes formado por Calisaya Fernando Daniel, Ruiz Paola Del Valle, Hidalgo Gabriel, Morales Gastón, Morales Castro Danisa, Peña Matías Nicolás, Pereyra Facundo Ezequiel, Vizcaíno Lucas Ezequiel y Vizcaíno Gisela Carina.
@@ -140,7 +232,7 @@
             <div class="box">
                 <h2>Repositorio Team Fortram</h2>
                 <div class="iconoFoter" >
-                    <a href="" class="fa fa-github fa-2x"></a>
+                    <a href="#" class="fa fa-github fa-2x"></a>
                 </div>
             </div>
         </div>
