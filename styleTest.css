@@ -1,6 +1,12 @@
+
 :root {
-    --bodyFondo: linear-gradient(to right, rgb(10, 7, 56), #8a4eff);
-    --titulof: #3cf;
+  --bodyFondo: linear-gradient(to bottom right, rgb(10, 7, 56), #8a4eff);
+  --transparenciaFondo: rgba(0,0,0,0);
+  --azulOscuroBoton:#070047;
+  --titulof: #3cf;
+  --blanco: #ffffff;
+  --negro: #000000;
+  --header: #2e1569ec;
 }
 
 *:before,
@@ -10,36 +16,45 @@
 }
 
 body {
+  text-align: justify;
   font-family: Arial, sans-serif;
   line-height: 1.5;
   min-height: 100vh;
-  background-color: linear-gradient(to right, rgb(10, 7, 56), #8a4eff);
+  background: var(--bodyFondo);
   margin: 0;
   padding: 0;
 }
 
 /* Estilos generales del encabezado */
 header {
-  background-color: #333;
+  background-color: var(--header);
   padding: 20px;
-  color: #fff;
+  color: var(--blanco);
+}
+
+.fixed-header {
+  position:fixed;
+	z-index:1000;
+	top:0;
+	width: 100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }
 
 .container {
-    max-width: 900px; /* Ajusta el tamaño según tus necesidades */
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px; /* Ajusta el tamaño según tus necesidades */
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 100; 
+    z-index: 100;
 }
 
 /* Estilos del logo */
 .logoFortram img {
-  width: 100px; /* Ajusta el tamaño según tus necesidades */
+  width: 100px;
 }
 
 /* Estilos de la navegación */
@@ -55,15 +70,47 @@ nav ul {
 .boton a {
     display: block;
     padding: 10px;
-    color: #fff;
+    color: var(--blanco);
     text-decoration: none;
     transition: background-color 0.3s ease,   border-radius 0.3s ease;
     border-radius: 5px;
 }
 
 .boton a:hover {
-  background-color: #555;
+  background-color: var(--azulOscuroBoton);
   border-radius: 20px;
+}
+/*Estilo para Js para pcultar o ver contenido*/
+.oculto {
+  display: none;
+}
+/*Estilo para Js para pcultar o ver contenido*/
+.vicible {
+  display: block;
+}
+
+.mostrarMas {
+  background-color: var(--azulOscuroBoton);
+  border: none;
+  border-radius: 40px;
+  color: var(--blanco);
+  padding: 15px 32px;
+  font-size: 1.2em;
+  box-shadow: 0px 0px 10px 0px var(--azulOscuroBoton);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.mostrarMas:hover {
+  box-shadow: none;
+  background-color: var(--negro);
+  color: var(--blanco);
+  transition: cubic-bezier(0.075, 0.82, 0.162, 1) 3.05s;
+
 }
 
 /* Estilos del título principal */
@@ -86,103 +133,288 @@ nav ul {
 /* Estilos del contenedor principal */
 main {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 20px;
 }
 
+
+ /* Seccion: TeamFortran*/
+
+
 /* Estilos del equipo Fortram */
-.TeamFortram {
+
+.TeamFortran {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .wrapper {
+      flex-direction: column;
+  }
 }
 
-/* Estilos de los párrafos dentro de las secciones */
-.TeamFortram p,
-.Integrantes p,
-.Metodologia p {
+.wrapper {
+  text-align: center;
+  flex-grow: 1; /* Agregar esta propiedad */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper .h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: #FC6D6D;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.wrapper .static-text {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+
+.dinamic-text li{
+  color: #FC6D6D;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500px;
+  top: 0;
+  opacity: 0;
+}
+
+.image-container {
+  flex: 1;
+}
+
+
+/* Menu de Integrantes */
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.carousel__contenedor {
+  position: relative;
+  width: 850px;
+}
+
+.carousel__anterior, .carousel__siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: var(--blanco);
+  opacity: 20%;
+}
+
+.carousel__anterior:hover, .carousel__siguiente:hover {
+  opacity: 100%;
+}
+
+.carousel__anterior {
+  left: -30px;
+}
+
+.carousel__siguiente {
+  right: -30px;
+}
+
+.carousel__lista {
+  overflow: hidden;
+  
+}
+
+.carousel__indicadores .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: var(--blanco);
+  opacity: .2;
+  border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+  opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+  opacity: 1;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 30px;
+  margin-right: 80px;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 100;
+  width: 130px;
+  height: 160px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  padding: 30px;
+  margin-left: 20px;
+  background: var(--blanco);
+}
+
+.card .cardContent .img {
+  height: 70%;
+  margin-bottom: 20px;
+  
+}
+
+.card .cardContent .img img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
+  
+}
+
+.card .cardContent span {
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  background: linear-gradient(to right, #5e2066, #b332c7);
+  transform: rotate(-35deg);
+  top: -30px;
+  left: -80px;
+}
+
+.card .cardContent h4 {
+  font-size: 18px;
+  color: #1a1919;
+  margin-bottom: 5px;
+}
+
+.team .card .linkIcon {
+  position: absolute;
+  z-index: 90;
+  width: 1px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: rgba(155, 155, 155, 0.5);
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  padding: 15px;
+  align-items: center;
+  right: 10px;
+  top: 5px;
+  transition: .5s;
+}
+
+.card:hover .linkIcon {
+  right: -20px;
+  border-radius: 0 10px 10px 0;
+}
+
+.card .linkIcon a {
+  font-size: 20px;
+  color: #646069;
+}
+
+.card .linkIcon a:nth-child(1):hover {
+  color: #5d277d;
+}
+
+/*Footer*/
+.pie {
+  width: 100%;
+  background-color:  #060133;
+}
+
+.grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.grupo-1 .box h2{
+  color: var(--blanco);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.grupo-1 .box p{
+  color: var(--blanco);
   margin-bottom: 10px;
 }
 
-/* Menu de Integrantes */
-.foto-Integrante {
-  padding: 2rem;
-  background-color: #dac8c880;
-  position: relative;
-  width: calc(130 + 4 * 70px + 4rem);
+.grupo-1 .iconoFoter{
   display: flex;
   justify-content: center;
-  
-  border-radius: 20px 20px;
-  box-shadow: 0 10px 25px 0 rgba(235, 235, 235, 0.26);
-  
+  align-items: center;
+  max-width: 200px;
 }
 
-.foto-Integrante img{
-  width: 70%;
-  height: 70%;
+.grupo-1 .iconoFoter a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: var(--blanco);
+  margin-right: 10px;
+  background-color:  #060133;
+  text-align: center;
+  transition: all 300ms ease;
 }
 
+.grupo-1 .iconoFoter a:hover{
+  color: #424057;
+}
 
-.linkF {
-  display: inline-flex;
-  cursor: pointer;
+.grupo-1 .box figure img{
+  width: 250px;
+}
+
+.grupo-2 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 50px;
-  border-radius: 99em;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  transform-origin: center left;
-  transition: width 0.2s ease-in;
-  text-decoration: none;
-  color: inherit;
 }
 
-.linkF:before{
-  position: absolute;
-  z-index: -1;
-  content: --;
-  display: block;
-  border-radius: 99em;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  transform: translateX(100%);
-  transition: transform 0.2s ease-in;
-  transform-origin: center right;
-  background-color: #eeee;
-}
-
-.linkF:hover, .linkF:focus {
-  outline: 0;
-  width: 180px;
-  background-color: #dac8c8ef;
-}
-
-.linkF:hover:before,
-.linkF:hover .link-titulo {
-  transform: translateX(-2%);
-  background-color: #dac8c8ce;
-}
-
-.link-icon {
-  color: var(--titulof);
-  font-size: 27px !important;
-  display: block;
-  flex-shrink: 0;
-  left: 11px;
-  position: absolute;
-}
-
-.link-titulo {
-  color: var(--titulof);
-  transform: translateX(100%);
-  transition: transform 0.2s ease-in;
-  display: block;
+.grupo-2{
+  background-color: #070047;
+  padding: 15px 10px;
   text-align: center;
-  text-indent: 10px;
-  width: 100%;
-  height: 100%;
+  color: var(--blanco);
 }
+
+.grupo-2 small{
+  font-size: 15px;
+}
+
+
+
 
