@@ -1,6 +1,8 @@
 
 :root {
+
   --bodyFondo: linear-gradient(to bottom right, rgb(26, 15, 179), #dddddd);
+
   --transparenciaFondo: rgba(0,0,0,0);
   --azulOscuroBoton:#070047;
   --titulof: #3cf;
@@ -137,7 +139,12 @@ main {
   padding: 20px;
 }
 
+
+ /* Seccion: TeamFortran*/
+
+
 /* Estilos del equipo Fortram */
+
 
 .TeamFortram {
   display: flex;
@@ -173,7 +180,37 @@ main {
 .TeamFortram .image-container img {
   max-width: 100%; 
   max-height: 100%; 
+
 }
+.wrapper .h1{
+  font-size: 24px;
+  font-weight: bold;
+  color: #FC6D6D;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.wrapper .static-text {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+
+.dinamic-text li{
+  color: #FC6D6D;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500px;
+  top: 0;
+  opacity: 0;
+}
+
+.image-container {
+  flex: 1;
+}
+
 
 
 /* Menu de Integrantes */
@@ -241,6 +278,7 @@ main {
 }
 
 .card {
+
   position: relative;
   margin-bottom: 30px;
   margin-right: 80px;
@@ -248,6 +286,7 @@ main {
 
 .cardContent {
   position: relative;
+
   z-index: 100;
   width: 130px;
   height: 160px;
@@ -311,7 +350,9 @@ main {
 }
 
 .card:hover .linkIcon {
+
   right: -38px;
+
   border-radius: 0 10px 10px 0;
 }
 
@@ -375,7 +416,9 @@ main {
   color: #424057;
 }
 
+
 .grupo-1 .box img{
+
   width: 250px;
 }
 

@@ -32,8 +32,12 @@ window.addEventListener('load', function () {
     next: '.carousel__siguiente'
   }
   });
+
 })
 
 
 
  
+
+
+

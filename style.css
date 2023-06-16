@@ -139,6 +139,7 @@ main {
   padding: 20px;
 }
 
+
 /* Estilos del equipo Fortram */
 
 .TeamFortram {
@@ -238,6 +239,7 @@ main {
   opacity: .5;
 }
 
+
 .carousel__indicadores .glider-dot.active {
   opacity: 1;
 }
@@ -317,6 +319,7 @@ main {
   border-radius: 0 10px 10px 0;
 }
 
+
 .card .linkIcon a {
   font-size: 20px;
   color: #646069;
@@ -324,10 +327,12 @@ main {
 
 .card .linkIcon a:nth-child(1):hover {
   color: #5d277d;
+
 }
 
 .Proyectos .contruccionimg img{
   width: 200px;
+
 }
 
 /*Footer*/
