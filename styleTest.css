@@ -1,6 +1,8 @@
 
 :root {
-  --bodyFondo: linear-gradient(to bottom right, rgb(10, 7, 56), #8a4eff);
+
+  --bodyFondo: linear-gradient(to bottom right, rgb(26, 15, 179), #dddddd);
+
   --transparenciaFondo: rgba(0,0,0,0);
   --azulOscuroBoton:#070047;
   --titulof: #3cf;
@@ -143,25 +145,42 @@ main {
 
 /* Estilos del equipo Fortram */
 
-.TeamFortran {
-  margin-bottom: 20px;
+
+.TeamFortram {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-}
-@media (max-width: 768px) {
-  .wrapper {
-      flex-direction: column;
-  }
+  justify-content: center; 
+  width: 500px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: 50px;
 }
 
-.wrapper {
-  text-align: center;
-  flex-grow: 1; /* Agregar esta propiedad */
+.TeamFortram .equipo {
+  
+  width: 50%;
+}
+
+.TeamFortram .equipo h1 {
+  font-size: 28px;
+}
+
+
+.TeamFortram .image-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 10%;
+  background-color: #e2ddddde;
+  width: 50%;
+ 
+}
+
+.TeamFortram .image-container img {
+  max-width: 100%; 
+  max-height: 100%; 
+
 }
 .wrapper .h1{
   font-size: 24px;
@@ -191,6 +210,7 @@ main {
 .image-container {
   flex: 1;
 }
+
 
 
 /* Menu de Integrantes */
@@ -258,6 +278,7 @@ main {
 }
 
 .card {
+
   position: relative;
   margin-bottom: 30px;
   margin-right: 80px;
@@ -265,6 +286,7 @@ main {
 
 .cardContent {
   position: relative;
+
   z-index: 100;
   width: 130px;
   height: 160px;
@@ -328,7 +350,9 @@ main {
 }
 
 .card:hover .linkIcon {
-  right: -20px;
+
+  right: -38px;
+
   border-radius: 0 10px 10px 0;
 }
 
@@ -392,7 +416,9 @@ main {
   color: #424057;
 }
 
-.grupo-1 .box figure img{
+
+.grupo-1 .box img{
+
   width: 250px;
 }
 
