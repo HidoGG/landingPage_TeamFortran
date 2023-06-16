@@ -1,6 +1,6 @@
 
 :root {
-  --bodyFondo: linear-gradient(to bottom right, rgb(10, 7, 56), #8a4eff);
+  --bodyFondo: linear-gradient(to bottom right, rgb(26, 15, 179), #dddddd);
   --transparenciaFondo: rgba(0,0,0,0);
   --azulOscuroBoton:#070047;
   --titulof: #3cf;
@@ -123,11 +123,13 @@ nav ul {
 .titulo-secundario {
   font-size: 20px;
   margin-bottom: 10px;
+  margin-top: 5px;
 }
 
 /* Estilos del título Terciario*/
 .titulo-terciario {
-  margin-bottom: 5px;
+  margin-top: 4px;
+  margin-bottom: 3px;
 }
 
 /* Estilos del contenedor principal */
@@ -137,59 +139,42 @@ main {
   padding: 20px;
 }
 
-
- /* Seccion: TeamFortran*/
-
-
 /* Estilos del equipo Fortram */
 
-.TeamFortran {
-  margin-bottom: 20px;
+.TeamFortram {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-}
-@media (max-width: 768px) {
-  .wrapper {
-      flex-direction: column;
-  }
+  justify-content: center; 
+  width: 500px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: 50px;
 }
 
-.wrapper {
-  text-align: center;
-  flex-grow: 1; /* Agregar esta propiedad */
+.TeamFortram .equipo {
+  
+  width: 50%;
+}
+
+.TeamFortram .equipo h1 {
+  font-size: 28px;
+}
+
+
+.TeamFortram .image-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.wrapper .h1{
-  font-size: 24px;
-  font-weight: bold;
-  color: #FC6D6D;
-  text-align: center;
-  margin-top: 20px;
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 10%;
+  background-color: #e2ddddde;
+  width: 50%;
+ 
 }
 
-
-.wrapper .static-text {
-  color: #fff;
-  font-size: 60px;
-  font-weight: 400;
-}
-
-
-.dinamic-text li{
-  color: #FC6D6D;
-  list-style: none;
-  font-size: 60px;
-  font-weight: 500px;
-  top: 0;
-  opacity: 0;
-}
-
-.image-container {
-  flex: 1;
+.TeamFortram .image-container img {
+  max-width: 100%; 
+  max-height: 100%; 
 }
 
 
@@ -341,6 +326,10 @@ main {
   color: #5d277d;
 }
 
+.Proyectos .contruccionimg img{
+  width: 200px;
+}
+
 /*Footer*/
 .pie {
   width: 100%;
@@ -392,7 +381,7 @@ main {
   color: #424057;
 }
 
-.grupo-1 .box figure img{
+.grupo-1 .box img{
   width: 250px;
 }
 

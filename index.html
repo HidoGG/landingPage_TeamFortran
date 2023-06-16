@@ -16,14 +16,14 @@
     <title>TeamFortram</title>
 </head>
 <body>
-    <header class="fixed-header">
+    <header id="main-header" class="fixed-header">
         <div class="container">
             <h1 class="logoFortram"><img src="img/logoFortram.png" alt="Logo de UTN San Rafael" ></h1>
             <nav>
                 <ul class="container-link">
-                    <li class="boton"><a class="link" href="contacto.html">Integrantes</a></li>
-                    <li class="boton"><a class="link" href="contacto.html">Metodología</a></li>
-                    <li class="boton"><a class="link" href="contacto.html">Proyectos</a></li>
+                    <li class="boton"><a class="link" href="#integrantes">Integrantes</a></li>
+                    <li class="boton"><a class="link" href="#metodologia">Metodología</a></li>
+                    <li class="boton"><a class="link" href="#proyecto">Proyectos</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,13 +32,11 @@
         
         <section class="TeamFortram">
 
-            <div class="wrapper">
-                <div class="static-text">Somos</div>
-                <h1 class="h1">Team Fortran</h1>
-                <div class="image-container">
-                    <img src="img/team-removebg-preview.png" alt="logo Fortran">
-                </div>
-
+            <div class="equipo">
+                <h1>Somos Team Fortran</h1>
+            </div>
+            <div class="image-container">
+                <img src="img/team-removebg-preview.png" alt="logo Fortran">
             </div>
 
         </section>
@@ -47,7 +45,7 @@
         <section class="oculto" id="ocultoTexto" >
             <section class="Integrantes">
                 
-                <h3 class="titulo-secundario">Integrantes</h3>
+                <h3 class="titulo-secundario" id="integrantes">Integrantes</h3>
                 <div class="team">
 
                     <div class="carousel__contenedor">
@@ -187,7 +185,7 @@
                 </p>
             </section> 
             <section class="Metodologia">
-                <h3 class="titulo-secundario">Metodología de trabajo</h3>
+                <h3 class="titulo-secundario" id="metodologia">Metodología de trabajo</h3>
                 <p>
                     En este proyecto, hemos adoptado una metodología de trabajo híbrida que combina los principios de SCRUM y KANBAN para maximizar nuestra eficiencia y productividad. Nuestro equipo de nueve integrantes se organiza utilizando ramas de trabajo individuales.
                 </p>
@@ -212,7 +210,14 @@
                 <p>
                     Con esta metodología híbrida, estamos logrando una mayor eficiencia y productividad en nuestro trabajo, al tiempo que aseguramos una entrega de alta calidad en cada iteración.
                 </p>
-            </section>   
+            </section> 
+            <section class="Proyectos" >
+                    <div class="contruccionimg">
+                        <h2 class="titulo-secundario" id="proyecto">Proyectos</h2>
+                        <h3 class="titulo-terciario">Sección en contrucción</h3>
+                        <img src="https://distincionpanaderia.com/wp-content/uploads/2016/08/En-construccion.jpg" alt="ImagenEnContruccion" width="500">
+                    </div>
+            </section>  
         </section>
         
     </main>
@@ -220,9 +225,7 @@
         <div class="grupo-1">
             <div class="box">
                 <figure>
-                        <a href="#">
-                            <img src="" alt="Logo Fortram">
-                        </a>
+                     <img src="img/logoFortram.png" alt="Logo Fortram">   
                 </figure>
             </div>
             <div class="box">
